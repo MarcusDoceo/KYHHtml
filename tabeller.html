@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table, th, td {
+            border: solid 2px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Min tabell</h1>
+
+    <table>
+        <tr>
+            <th colspan="2">Namn</th>
+            <th>Telefon</th>
+        </tr>
+        <tr>
+            <td>Marcus</td>
+            <td>Henriksson</td>
+            <td rowspan="2">070 123 45 67</td>
+        </tr>
+        <tr>
+            <td>Rebecka</td>
+            <td rowspan="2">Hedlin</td>
+        </tr>
+        <tr>
+            <td>Cihan</td>
+            <td>0347480739573</td>
+        </tr>
+    </table>
+
+    <!-- Dynamisk tabell baserat på JS -->
+    <script>
+        let myArray = ["Adam", "Beatrice", "Ceasar", "Dahlia", "Erik", "Filipa"];
+    </script>
+    <h2>Min dynamiska tabell</h2>
+    <table>
+        <tr><th>Names</th></tr>
+        <script>
+            myArray.forEach( (item) => {
+                document.write(`<tr><td>${item}</td></tr>`);
+            });
+        </script>
+    </table>
+</body>
+</html>

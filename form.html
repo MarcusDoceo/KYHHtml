@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Mitt formulär</h1>
+
+    <!-- Forumulär -->
+    <form method="get">
+        <!-- Text fält -->
+        <label for="firstName">First name:</label>
+        <input type="text" name="firstName" id="firstName" required><br>
+
+        <!-- Password fält -->
+        <label for="pass">Lösenord:</label>
+        <input type="password" name="pass" id="pass" required><br>
+
+        <!-- Number fält -->
+        <label for="age">Ange din ålder här:</label>
+        <input type="number" name="age" id="age" required><br>
+
+        <!-- Radio buttons -->
+        <label for="red">Röd:</label>
+        <input type="radio" name="faveColor" id="red" value="red" checked><br>
+        <label for="blue">Blå:</label>
+        <input type="radio" name="faveColor" id="blue" value="blue"><br>
+        <label for="yellow">Gul:</label>
+        <input type="radio" name="faveColor" id="yellow" value="yellow"><br>
+        <label for="green">Grön:</label>
+        <input type="radio" name="faveColor" id="green" value="green"><br>
+
+        <!-- Checkbox -->
+        <label for="myndig">Är du över 18 år: </label>
+        <input type="checkbox" name="myndig" id="myndig"><br>
+
+        <!-- Submit knapp -->
+        <input type="submit" value="Klicka här för att skicka iväg data">
+    </form>
+</body>
+</html>
